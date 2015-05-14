@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 33 Fear  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/32"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/34"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/32'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/34'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/32' title='Previous'><</a>                <a href='/case/34' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a href='/case/33?lang=de&trans=andrebogus'><span class='trans-about'>German / Deutsch<br />Übersetzt von Andre Bogus</span><span class='trans-lang'>DE</span></a>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/33?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/33?lang=fr&trans=cdlm'><span class='trans-about'>French / Français<br />Traduit par Damien Pollet</span><span class='trans-lang'>FR</span></a>
+<a href='/case/33?lang=it&trans=mpas'><span class='trans-about'>Italian / Italiano<br />Tradotto da Marco Pastori &mdash; Rome, Italy</span><span class='trans-lang'>IT</span></a>
+<a href='/case/33?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/33?lang=ru&trans=abur'><span class='trans-about'>Russian / русский<br />Перевод Alexei Burmistrov (Алексей Бурмистров)</span><span class='trans-lang'>RU</span></a>
+<a href='/case/33?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>slightly geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="slightly geeky"><img src="/images/geek1.png" alt="slightly geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 33</a></h2><h1 class="title"><a class='subtle' href='/contents'>Fear</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><p>A senior monk, recently inducted into the temple, approached
+the Java master in frustration:</p>
+
+<p>“I am tasked to add several features to the Imperial Shoemaker’s
+order-processing system, yet I cannot begin to comprehend
+how it works.  The logic is distributed among multiple
+applications, each implemented with wildly different
+technologies.  Instead of creating common utilities the
+authors have merely copied swaths of code from place to
+place, often introducing subtle differences afterward.
+Background jobs seek and modify database records for no
+documented reason, and the database itself conspires against
+me: a simple update of one table can trigger a cascade of
+inserts and deletes in others.”</p>
+
+<img src="/pages/case-33/balloon-1.png" alt="" title="" class="illus-right" style="float:right; margin-right:0px"/>
+
+
+<p>“I see two paths before you,” said the Java master.  “In the
+first, you make only the necessary additions and quickly
+proclaim victory.  In the second, you begin the arduous task
+of refactoring the code base.  How will you proceed?”</p>
+
+<p>The monk bowed in shame.  “I cannot say.  At present I am
+afraid to touch anything, lest my ignorance prove my
+undoing.”</p>
+
+<p>“Fear makes good armor but a poor blade,” nodded the Java
+master.  “To defeat your fear, we must dispel your
+ignorance.”  With his staff he slid the window-screen open
+and gestured to the forest beyond.</p>
+
+<p>“Follow the Road of White Nettles for three days into the
+mountains, and you will come to a hermitage perched on a
+cliff.  A learned brother dwells there who keeps copies of
+our client’s documentation.  He will advise you on the
+design of the system.”</p>
+
+<img src="/pages/case-33/balloon-2.png" alt="" title="" class="illus-right" style="float:right; margin-right:-50px"/>
+
+
+<p>The monk did as he was told, and at sunset came to the
+hermitage, which was a building unlike any he had ever seen.</p>
+
+<p>It had clearly begun life as a sturdy stone house at the
+very edge of the cliff, but three new wings of rough-hewn
+pine with bark shingles now thrust well beyond the cliff and
+into space.  Beyond these were open walkways and stairways,
+ending in dozens of rooms perched on diagonal stilts that
+were (only barely) supported by rocky outcroppings far
+below.</p>
+
+<p>Lashed onto the rooms were other additions stretching still
+further out into the void, made of bamboo and canted crazily
+in all directions.  Ramps and ladders erupted from their
+undersides, leading to isolated rooms suspended by ropes and
+made chiefly of reed and straw.  Everything was bound
+together with lines of hemp, tied off at a windowsill here
+and a weathervane there, as though some great drunken spider
+had caught a hundred huts in its web.  The structure swayed
+sickeningly in the gentle breeze, creaking as it did.</p>
+
+<img src="/pages/case-33/balloon-3.png" alt="" title="" class="illus-right" style="float:right; margin-right:-100px"/>
+
+
+<p>The monk stood gaping for a while, then recovered himself
+and struck the gong.</p>
+
+<p>From the furthest room came the hermit, shimmying up ropes
+and down rooftops, disappearing into a trapdoor of bamboo
+and finally reappearing at the door of the hut.</p>
+
+<p>“What news to me from the temple?” asked the hermit.
+“Have I been summoned home at last?”</p>
+
+<p>The monk indicated that he had no such news to relay.</p>
+
+<p>The hermit hung his head.  “Miserable me!  For until such
+word is given, my task is to expand this hermitage ever
+outward beyond the cliff’s edge, to house the temple’s
+growing collection of temporary files.  This I have done for
+years now, faithfully and unquestioningly, hoping to one day
+earn the master’s favor and return from exile.  But I
+confess that my work becomes more difficult with each
+passing season.  Winter snows hang so heavy on the rooftops
+that the bamboo stilts begin to buckle, and in summer I must
+fight the magpies to keep my straw walls from becoming part of
+someone’s nest.  By the by... you are not (I hope) possessed
+of any allergies?  Pollen?  Ragweed?  I once watched seven
+rooms collapse and tumble down the cliff in answer to a
+vigorous sneeze...”</p>
+
+<img src="/pages/case-33/balloon-4.png" alt="" title="" class="illus-right" style="float:right; margin-right:-150px"/>
+
+
+<p>“But this is madness!” cried the monk.  “Now that you have
+some sense of how many rooms are needed, can you not tear
+down this monstrosity and start anew?”</p>
+
+<p>“What nonsense.  Imagine the time such an endeavor might
+take, and how displeased my master might become in the
+meanwhile!  How could I justify subtracting storerooms
+instead of adding them?  My exile might be extended for
+another decade!  No, it is far safer to do exactly as I have
+been commanded.  Anyway, I understand this hermitage quite
+well, its strong places and weak ones; and so long as I
+tread lightly and avoid pepper, my odds of perishing in a
+long fall are reasonably low.</p>
+
+<p>“But enough of my plight, learned brother.  If you were not
+sent here to summon me home, then you must need my help
+understanding the Imperial Shoemaker’s order-processing
+system.  Many like yourself have come for that purpose, for
+it was I who was its author.”</p>
+
+<p>The monk only bowed and departed back down the road, having
+already obtained the promised enlightenment from the
+hermitage.
+</p>
+
+<img src="/pages/case-33/hermitage.jpg" alt="" title="Yes, but he doesn&#39;t get much mail anyway." class="illus-center"/>
+
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/complexity'>complexity</a>, <a href='/topics/elegance'>elegance</a>, <a href='/topics/refactoring'>refactoring</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

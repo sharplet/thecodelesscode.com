@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 9 Infinities  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/8"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/10"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/8'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/10'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/8' title='Previous'><</a>                <a href='/case/10' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a href='/case/9?lang=de&trans=andrebogus'><span class='trans-about'>German / Deutsch<br />Übersetzt von Andre Bogus</span><span class='trans-lang'>DE</span></a>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/9?lang=es&trans=jtor'><span class='trans-about'>Spanish / Español<br />Traducido por Jos&eacute; Tordesillas</span><span class='trans-lang'>ES</span></a>
+<a href='/case/9?lang=es&trans=cgib'><span class='trans-about'>Spanish / Español<br />Traducido por Carlos García Ibáñez</span><span class='trans-lang'>ES</span></a>
+<a href='/case/9?lang=fr&trans=cdlm'><span class='trans-about'>French / Français<br />Traduit par Damien Pollet</span><span class='trans-lang'>FR</span></a>
+<a href='/case/9?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/9?lang=it&trans=mpas'><span class='trans-about'>Italian / Italiano<br />Tradotto da Marco Pastori &mdash; Rome, Italy</span><span class='trans-lang'>IT</span></a>
+<a href='/case/9?lang=nl&trans=tsluyter'><span class='trans-about'>Dutch / Nederlands<br />Vertaald door Thomas Sluyter</span><span class='trans-lang'>NL</span></a>
+<a href='/case/9?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+<a href='/case/9?lang=zh&trans=kz'><span class='trans-about'>Chinese / 中国话<br />译者 KZ (康政)</span><span class='trans-lang'>ZH</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>slightly geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="slightly geeky"><img src="/images/geek1.png" alt="slightly geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 9</a></h2><h1 class="title"><a class='subtle' href='/contents'>Infinities</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><img src="/pages/case-9/Lotus-050.jpg" alt="" title="You think YOU were poor because you had to share your CLOTHES?  We had to share our LEGS." class="illus-right"/>
+
+
+<p>Two monks of the <a href='/names/Spider+Clan'>Spider Clan</a> were arguing whether the new
+input validation routine was caught in an infinite loop.</p>
+
+<p>“How long has it been running?” asked the abbot.</p>
+
+<p>“No more than thirty minutes,” said the pale thin monk.</p>
+
+<p>“Yet no less than that either,” said the dark fat monk.</p>
+
+<p>“And you have done nothing this whole time but wait for it
+to complete?” asked the abbot.</p>
+
+<p>The monks bowed their heads in shame.</p>
+
+<p>The abbot reported this to the Java master, who nodded.
+“Which of them believes that the loop is <i>not</i>
+infinite?”</p>
+
+<p>“The pale thin one,” said the abbot.</p>
+
+<p>“Then give him a skin of wine, for he is wise.  No loop may
+be truly infinite.  Someday the power will fail, the server
+will rust, the temple will crumble, and the sun will
+swallow the earth.”</p>
+
+<p>Asked the abbot, “What of the dark fat one, who believes
+that the loop is infinite?”</p>
+
+<p>“Give him two skins of wine, for he is wiser.  To the user
+waiting at his browser, ten seconds is agony, a minute is an
+aeon, and anything longer is effectively an eternity.  When
+the tiger mauls the antelope, the antelope does not question
+whether eight claws were used, or a million.”
+</p>
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/philosophy'>philosophy</a>, <a href='/topics/infinity'>infinity</a>, <a href='/topics/loops'>loops</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

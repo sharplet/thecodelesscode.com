@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 101 Accountability  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/100"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/102"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/100'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/102'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/100' title='Previous'><</a>                <a href='/case/102' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/101?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/101?lang=fr&trans=abelards'><span class='trans-about'>French / Français<br />Traduit par Sylvain Abélard</span><span class='trans-lang'>FR</span></a>
+<a href='/case/101?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/101?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>slightly geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="slightly geeky"><img src="/images/geek1.png" alt="slightly geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 101</a></h2><h1 class="title"><a class='subtle' href='/contents'>Accountability</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><p>One morning the Temple found itself flooded with calls from
+panicked users, claiming that they had received erroneous
+emails from a particular billing system.  The emails alleged
+that payments were now a year overdue, and regrettably the
+users’ heads were forfeit.</p>
+
+<p>Temple abbots gathered in the courtyard, debating how best
+to locate the source of the problem before the Temple’s entire customer
+base disappeared into the mountains to escape the executioner’s axe.</p>
+
+<img src="/pages/case-101/Door.jpg" alt="" title="Five storeys under solid stone, made of four-inch thick reinforced oak beams clad in iron.  And it still doesn&#39;t keep out spam." class="illus-right"/>
+
+
+<p>“There is no need,” said the nun <a href='/names/Hw%C3%ADdah'>Hwídah</a> from the edge of
+the courtyard.  “The shame is my own.  In our last
+maintenance build I carelessly modified a boolean expression
+in the accounting module, causing it to return false when the
+proper answer was true.  I have now corrected the defect,
+and the spurious emails have ceased.”</p>
+
+<p>Hwídah was banished for two months to the dungeons below
+the Temple’s deepest archives, where alone she would inspect
+mouldering printouts of old COBOL scripts for possible defects.</p>
+
+<p>After a week the nun <a href='/names/Y%C3%ADwen'>Yíwen</a> came to replenish the prisoner’s
+allotment of cold rice.</p>
+
+<p>“Forgive my puzzlement, Hwídah,” asked Yíwen as she pushed a
+tray under the cell door, “but why did you admit your fault
+after correcting the error?  Had you remained silent the
+cause would have escaped detection for many days, by which
+time the Temple would have turned its attention to more urgent
+matters.  Your involvement could have remained unknown forever.”</p>
+
+<p>“Tell me, Yíwen,” said the prisoner, “what chaos would ensue
+if <i>all</i> the modules in our system occasionally returned
+false when the proper answer was true?  And when I say
+<i><a href='/case/70'>system</a>,</i> what picture does the word make in your
+mind?”</p>
+
+<p>Hwídah slid the empty tray back under the door.  “On that
+morning, when the horror of my error was revealed to me, so
+too was this understanding: we are all a part of the system.
+It is an extension of our desires, our efforts, and&mdash;lamentably&mdash;our flaws.  If I were to let my fellows waste
+precious hours searching for a defect that I had secretly corrected,
+I would only have failed the system a second time.”
+</p>
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/accountability'>accountability</a>, <a href='/topics/production+support'>production support</a>, <a href='/topics/teamwork'>teamwork</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

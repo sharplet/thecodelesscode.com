@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 29 Goldfish  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/28"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/30"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/28'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/30'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/28' title='Previous'><</a>                <a href='/case/30' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a href='/case/29?lang=de&trans=andrebogus'><span class='trans-about'>German / Deutsch<br />Übersetzt von Andre Bogus</span><span class='trans-lang'>DE</span></a>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/29?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/29?lang=fr&trans=cdlm'><span class='trans-about'>French / Français<br />Traduit par Damien Pollet</span><span class='trans-lang'>FR</span></a>
+<a href='/case/29?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/29?lang=it&trans=mpas'><span class='trans-about'>Italian / Italiano<br />Tradotto da Marco Pastori &mdash; Rome, Italy</span><span class='trans-lang'>IT</span></a>
+<a href='/case/29?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>slightly geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="slightly geeky"><img src="/images/geek1.png" alt="slightly geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 29</a></h2><h1 class="title"><a class='subtle' href='/contents'>Goldfish</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><p>When a novice joins the temple and claims to seek wisdom,
+they are advised to find Java master Bawan and ask him: “How
+did wily old Madame <a href='/names/Jinyu'>Jinyu</a> become Abbess Over All Clans And Concerns?”</p>
+
+<p>Master <a href='/names/Bawan'>Bawan</a> will then hit the novice on the backside with a
+shovel, and instruct them to return the following night and
+ask again.  The following night the answer will be the same,
+and will conclude with the same order to return,
+until the novice is enlightened.</p>
+
+<p>The annals tell us this:</p>
+
+<img src="/pages/case-29/fish.png" alt="" title="" class="illus-center"/>
+
+
+<p>When the Venerable Jinyu was a nun of but five and twenty
+years, she and a monk of equal age were approached by
+the abbot of their clan.</p>
+
+<p>“The Emperor will be coming to inspect the new VAX
+mainframe, and to choose worthy members for various Royal
+Committees,” said the abbot. “Thus we wish His Excellency to
+be impressed with all facets of our temple.  The koi ponds
+are lifeless and choked with weeds.  Each of you must take
+one pond, clean it well, and ensure that new fish are
+present <i>each morning</i> for the Emperor’s amusement.”</p>
+
+<p>The monk was given the North Pond.  The stagnant green water
+was unsuitable for any living thing, so with a yoke and
+buckets the monk hauled every last drop away.  Then he
+scrubbed the lichen from the stones, pulled the weeds, and
+brought bucket after bucket of clean water from the temple
+well.  After a week the little pool was teeming with red
+and gold carp, bought from the markets with the monk’s own
+coins.</p>
+
+<p>Meanwhile, the South Pond lay untouched, and young Jinyu was
+nowhere to be found.</p>
+
+<p>With the Emperor’s visit fast approaching, the abbot sent
+for the nun.  When Jinyu was brought before him, he boxed
+her ears.  “If the Emperor loses confidence in our temple,
+our IT services contract may not be the only thing cut off
+prematurely.”</p>
+
+<p>Jinyu bowed.  “All will be as ordained, in two days’ time.”</p>
+
+<p>The following day the abbot went to the North Pond, which
+now was flush with white and black carp&mdash;again, purchased
+by the monk from the markets in town.  Yet the South Pond’s
+state was exactly as before.  He found Jinyu resting under a
+cypress tree, and boxed her ears again.</p>
+
+<p>Again Jinyu bowed.  “All will be as ordained, tomorrow morning.”</p>
+
+<p>The following day, the abbot went once more to the North
+Pond, which now was bursting with striped and spotted carp.
+Yet the South Pond’s state was <i>worse</i> than before: the
+lovely garden circling it had been dug up, and standing in
+the midst of the ruin was Jinyu and her shovel.</p>
+
+<p>The abbot boxed Jinyu’s ears.  “Account for yourself!” he
+demanded.</p>
+
+<p>The nun said nothing, but turned her shovel in a clot
+of earth at the edge of the pond.  Behind it was a trench
+that Jinyu had dug all the way to the river below the
+temple.  With the clot gone, the stagnant water
+spilled out of the pond and vanished down the trench.</p>
+
+<p>Then Jinyu turned her shovel at the other end of the pond,
+revealing a trench which carried down the waters of
+a mountain stream.  The stream rushed into the pond and
+out the other side, cleaning the stones and sweeping away
+the dead weeds.  In the dark water, flashes of red
+and gold could be seen.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>Thus was Jinyu chosen to head the Exalted Subcommittee on
+Automated Testing.</p>
+
+<p>And if anyone would dispute this account, let him first seek
+out Java master Bawan, and ask the ritual question.
+</p>
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/testing'>testing</a>, <a href='/topics/automated+testing'>automated testing</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

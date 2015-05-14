@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 139 Feedback  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/138"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/140"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/138'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/140'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/138' title='Previous'><</a>                <a href='/case/140' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/139?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/139?lang=fr&trans=abelards'><span class='trans-about'>French / Français<br />Traduit par Sylvain Abélard</span><span class='trans-lang'>FR</span></a>
+<a href='/case/139?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/139?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+<a href='/case/139?lang=zh&trans=zji'><span class='trans-about'>Chinese / 中国话<br />译者 zji</span><span class='trans-lang'>ZH</span></a>
+<a href='/case/139?lang=zh&trans=zj'><span class='trans-about'>Chinese / 中国话<br />译者 Zhou Ji (吉州)</span><span class='trans-lang'>ZH</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>not geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="not geeky"><img src="/images/geek0.png" alt="not geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 139</a></h2><h1 class="title"><a class='subtle' href='/contents'>Feedback</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><img src="/pages/case-139/Lecture2.jpg" alt="" title="In their defense, they were able to buy three new servers last year with all the money they saved on shampoo." class="illus-right"/>
+
+
+<p>It had been many weeks since master <a href='/names/Suku'>Suku</a> and her three
+novices set out from the <a href='/names/Temple+of+the+Morning+Brass+Gong'>Temple of the Morning Brass Gong</a> across the great mountains to the west.  The first
+warm winds of spring greeted the party as they arrived at
+the <a href='/names/Temple+of+the+Thrown+Coin'>Temple of the Thrown Coin</a>, whose monks built
+social-media-enabled websites for the wealthy merchants of
+their province.  Here, Suku would teach her
+art of creating maintainable code, while in return the
+Thrown Coin would share the secret riches of their
+technology stack.</p>
+
+<p>One of the two novice monks in Suku’s charge observed that
+the monks of the Thrown Coin attended closely to his words,
+treating him with the regard one might bestow upon a
+visiting dignitary.  But when the same words were spoken by
+Suku, the monks of the Thrown Coin either raised their
+eyebrows skeptically or lowered their gaze to fiddle with
+cellphones and tablets.  They did likewise when the novice
+nun spoke.</p>
+
+<p>It was then that the novice monk noticed the almost complete
+absence of women from the Temple of the Thrown Coin.  Only a
+few nuns could he spy as he cast his eyes around the
+lecture-hall.  All appeared to be of low rank, and they asked
+no questions.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>At breakfast next morning the novice monk sat next to one
+of the senior abbots.</p>
+
+<p>“Why are there so few women in this temple?” asked the
+novice monk.</p>
+
+<p>“Because very few girls apply for admittance anymore,”
+replied the abbot.</p>
+
+<p>“Why is that?” asked the novice monk.</p>
+
+<p>“Because it is widely known that most girls do not meet
+our rigorous standards,” replied the abbot.</p>
+
+<p>“Why is that?” asked the novice monk.</p>
+
+<p>“Because productivity requires harmony, and many female
+applicants are a poor fit for our culture,” replied the
+abbot.  “Indeed, most have wasted the time we invested
+in them by leaving soon after arriving.”</p>
+
+<p>“Why is that?” asked the novice monk.</p>
+
+<p>“Because they were unhappy here, and did not work well
+with the monks,” replied the abbot.</p>
+
+<p>“Why is that?” asked the novice monk.</p>
+
+<p>“Because like so many great temples, the culture of this
+temple is a boy’s culture: rough and rude, cruel and crude,
+in work and in play,” replied the abbot.</p>
+
+<p>“Why is that?” asked the novice monk.</p>
+
+<p>“Because there are so few women in this temple,”
+replied the abbot.
+</p>
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/culture+fit'>culture fit</a>, <a href='/topics/geek+culture'>geek culture</a>, <a href='/topics/bias'>bias</a>, <a href='/topics/women+in+tech'>women in tech</a>, <a href='/topics/vicious+circles'>vicious circles</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

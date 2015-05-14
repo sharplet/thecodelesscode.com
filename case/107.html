@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 107 Babel  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/106"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/108"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/106'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/108'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/106' title='Previous'><</a>                <a href='/case/108' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/107?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/107?lang=fr&trans=abelards'><span class='trans-about'>French / Français<br />Traduit par Sylvain Abélard</span><span class='trans-lang'>FR</span></a>
+<a href='/case/107?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/107?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>moderately geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="moderately geeky"><img src="/images/geek2.png" alt="moderately geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 107</a></h2><h1 class="title"><a class='subtle' href='/contents'>Babel</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><img src="/pages/case-107/Stranger-detail.jpg" alt="" title="" class="illus-right"/>
+
+
+<p>A thin, bedraggled stranger came to the Temple one night and
+asked for master <a href='/names/Kaimu'>Kaimu</a>.  The master was roused and
+brought to the gate, whereupon the stranger said:</p>
+
+<p>“For years I have wandered this pitiless land, seeking the
+perfect programming language.  Name any one and I’ve given
+it a go, be it fast or slow, high-level or low, from Ada to
+Zeno.  But whatever the pluses there are minuses too, so I
+pack my things and hit the road again&mdash;which in this case
+led me to your door.”</p>
+
+<p>Kaimu asked the stranger to describe the language of
+his heart’s desire.</p>
+
+<p>“It must be suitable enterprise-wide,” the stranger replied,
+“client-side and server-side, in scripting, in shells
+and in spreadsheet cells.  I need it real-time,
+multi-threaded and optionally object-oriented; with garbage
+collection, deadlock detection, custom exceptions,
+auto-resizing arrays of things and regular expressions for
+matching strings.  I want the simplicity of BASIC, the
+purity of Smalltalk, the brevity of Haskell, the speed of
+C, the consistency of Lisp, the readability of Python, the
+flexibility of Perl, and the portability of... Java, I
+guess, but with native code bindings that aren’t a mess.”</p>
+
+<p>“Then tomorrow morning we shall assist you as best we can,”
+said Kaimu.  “But tonight you must spend in the carpenter’s
+shed below the south wall.”</p>
+
+<p>The stranger bowed and departed to make his bed amid sawdust
+and wood shavings.  As Kaimu left for his own chambers a
+monk asked, “What is your design for him?”</p>
+
+<p>“When dawn breaks,” replied the master, “our guest will
+see that on the walls of that shed are arrayed ten thousand
+tools, each crafted to serve a unique purpose.  No one would
+mistake the hammer for the chisel, and no true
+carpenter would renounce one for the other.”</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>At the sun’s first light the stranger returned to the Temple
+gate, there to be greeted again by Kaimu and the monk.</p>
+
+<p>“Do you still seek your heart’s desire?” asked Kaimu.</p>
+
+<p>“No!” replied the stranger.  “For in the shed I found a
+most marvelous dagger, no larger than my hand, whose hilt
+opened to reveal the most wonderous things: tweezers and
+toothpicks, pliers and drill-bits, wrenches and reamers and
+rulers and tiny blades too numerous to count!  Holding it I
+understood that my destiny is to fashion the thing I have
+sought for&mdash;a language made of other languages, a tool to
+end the need for other tools!”</p>
+
+<p>And with that the stranger bowed and departed.</p>
+
+<p>The monk turned to Kaimu, whose jaw had gone somewhat
+slack.  “What do the annals say on the subject of
+the Misunderstood Lesson?”</p>
+
+<p>“That it too brings wisdom,” said the master, “If only to
+the hapless teacher.  No doubt I would have been twice as
+effective had I been half as clever.”</p>
+
+<p>“And what of the stranger?” asked the monk.  “Surely he will
+fail in his endeavor, for that knife he prizes holds neither
+hammer nor chisel.  And should he partly succeed then all
+the worse, for he will have added yet another language to a
+world that already drowns in confusion.”</p>
+
+<p>“Let him try, and good fortune to him!” said Kaimu.  “If not
+for fools of his fashion, we would not have Perl or Python,
+Bourne shell or Tcl, and the world would be a poorer place.
+I only grieve that you and I are not such fools, for since
+we will never attempt the impossible, we can never hope to
+achieve it.”</p>
+
+<p>Thus master and monk left the gate, and went in to the
+Temple together to greet the morning.</p>
+
+<img src="/pages/case-107/Stranger.jpg" alt="" title="" class="illus-centered"/>
+
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/languages'>languages</a>, <a href='/topics/high-level+languages'>high-level languages</a>, <a href='/topics/Perl'>Perl</a>, <a href='/topics/Python'>Python</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+<div class='credits'><p><span class='star'>*</span>The topic was suggested by Xunie.</p></div>
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

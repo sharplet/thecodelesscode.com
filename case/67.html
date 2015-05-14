@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 67 Grease  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/66"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/68"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/66'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/68'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/66' title='Previous'><</a>                <a href='/case/68' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/67?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/67?lang=fr&trans=cdlm'><span class='trans-about'>French / Français<br />Traduit par Damien Pollet</span><span class='trans-lang'>FR</span></a>
+<a href='/case/67?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/67?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>slightly geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="slightly geeky"><img src="/images/geek1.png" alt="slightly geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 67</a></h2><h1 class="title"><a class='subtle' href='/contents'>Grease</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><img src="/pages/case-67/well.jpg" alt="" title="At least he won&#39;t die of thirst." class="illus-right"/>
+
+
+<p>On Monday, the <a href="/case/62">last remaining abbot</a>
+of the <a href='/names/Spider+Clan'>Spider Clan</a> called Java master <a href='/names/Suku'>Suku</a> into his office.</p>
+
+<p>“You are well behind schedule,” said the abbot, flipping
+open a painted fan.  “I shall help you prioritize.  The
+analyst tells me that your application’s primary purpose is
+to chart historical data.  Therefore, direct all developers
+to cease their current activities and complete the
+chart-generation module.”</p>
+
+<p>“As the abbot commands,” said Suku.  She bowed low
+and went out.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>On Tuesday, the abbot called Suku into his office.</p>
+
+<p>“I have spoken with the customer,” said the abbot, filing
+his long nails.  “They can forgo charts in the first
+release, provided that we can export the data in tabular
+format.  Direct all developers to cease their current
+activities and complete the data-export module.”</p>
+
+<p>“As the abbot commands,” said Suku.  She bowed low
+and went out.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>On Wednesday, the abbot called Suku into his office.</p>
+
+<p>“I have spoken with the sales department,” said the abbot,
+pulling a needle carefully through an embroidery frame.
+“They have several prospective customers who would be swayed
+if we offered geographic visualization in the first release.
+Direct all developers to cease their current activities and
+complete the map-generation module.”</p>
+
+<p>“As the abbot commands,” said Suku.  She bowed low
+and went out.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>On Thursday and Friday, the abbot called Suku into his
+office.</p>
+
+<p>All went much as it had on the days before.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>On Saturday, the abbot called Suku into his office.</p>
+
+<p>“You have made very little progress this week,” said the
+abbot, dragging a tiny rake through a miniature sand garden
+on his desk. “Explain.”</p>
+
+<p>“As the abbot commands,” said Suku.  With a whirl of her
+staff she struck the abbot in the back of the head,
+sprawling him unconscious on his desk in a spray of white sand.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>On Sunday, the Abbess Over All Clans and Concerns called
+Suku into her office.</p>
+
+<p>“The abbot of your clan wished me to cancel your morning
+meeting on his behalf,” said the Abbess, “as he appears to
+have fallen into our deepest well and cannot climb out.”</p>
+
+<p>“Are there not sturdy iron rungs set in the walls?” asked Suku.</p>
+
+<p>“They appear to have been thoroughly greased,” frowned the
+Abbess.  “As was the bucket-rope.  And the stone walls
+themselves.  The abbot has climbed many miles this morning,
+yet sadly it is the same ten feet over and over.  Direct all
+your developers to cease their current activities and
+observe his progress.  I believe they will find it most
+edifying.”</p>
+
+<p>“As the abbess commands,” said Suku.  She bowed low
+and went out.
+</p>
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/management'>management</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+<div class='credits'><p><span class='star'>*</span>Stone wall texture from <a href="http://seamless-pixels.blogspot.com/2011/12/added-seamless-stone-wall-under.html">seamless-pixels.blogspot.com</a></p></div>
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

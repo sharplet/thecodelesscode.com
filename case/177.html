@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 177 The Tool-Shed  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/176"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/178"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/176'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/178'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/176' title='Previous'><</a>                <a href='/case/178' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a href='/case/177?lang=de&trans=andrebogus'><span class='trans-about'>German / Deutsch<br />Übersetzt von Andre Bogus</span><span class='trans-lang'>DE</span></a>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/177?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/177?lang=fr&trans=abelards'><span class='trans-about'>French / Français<br />Traduit par Sylvain Abélard</span><span class='trans-lang'>FR</span></a>
+<a href='/case/177?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/177?lang=pl&trans=jankociak'><span class='trans-about'>Polish / Polski<br />Tłumaczenie Jan Kociak</span><span class='trans-lang'>PL</span></a>
+<a href='/case/177?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>moderately geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="moderately geeky"><img src="/images/geek2.png" alt="moderately geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 177</a></h2><h1 class="title"><a class='subtle' href='/contents'>The Tool-Shed</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><p>The monk <a href='/names/Djishin'>Djishin</a> was walking in the forest, when he
+came upon a man sawing wood by the edge of the path.</p>
+
+<p>“What are you making, friend?” asked Djishin.</p>
+
+<p>“A tiny tool-shed that I have sorely needed,” said the man.
+“It will have one hook for my rake, another for my spade,
+and a place on the floor for my tin pail.”</p>
+
+<p>Djishin wished the man good health and continued on his way.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>The next day Djishin came upon this same man sawing wood.
+Many posts had been set into the ground.</p>
+
+<p>“How goes your work today, friend?” asked Djishin.
+“That is a wider tool-shed than I’d imagined.”</p>
+
+<p>Said the man, “Last night I wondered: what if I buy more
+rakes or pails, or wish to store clay pots?  So now it is a
+proper garden-shed.  See, here will go a window, with a
+shelf to start my seedlings.”</p>
+
+<p>Djishin wished the man good health and continued on his way.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>The next day Djishin came upon this same man sawing wood.
+Many more posts had been set into the ground, and joists for
+a floor, and ceiling beams.</p>
+
+<p>“How goes your work today, friend?” asked Djishin.
+“That is a taller garden-shed than I’d imagined.”</p>
+
+<p>Said the man, “Last night I thought: if I add
+a second storey, it would make a cozy cottage where I could
+rest after a hard day’s gardening.  See, here will go a ladder,
+where I may climb to a loft with a humble bed.”</p>
+
+<p>Djishin wished the man good health and continued on his way.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>The next day Djishin came upon this same man sawing wood.
+Many more posts had been set into the ground, and ceiling
+beams, but the floor had been torn apart.</p>
+
+<p>“How goes your work today, friend?” asked Djishin.
+“That is a larger cottage than I’d imagined.”</p>
+
+<p>Said the man, “Last night I decided: stairs are better than
+a ladder, for under them one may keep clothes and shoes.  In
+which case I may as well build a proper house, with a
+kitchen and a bathing-room, and give it to my son when he is
+grown.  See, here will go a fine stone floor, when I have
+money to pay the quarry.”</p>
+
+<p>Djishin wished the man good health and continued on his way.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>The next day Djishin came upon this same man sawing wood.
+Still more posts had been set into the ground, with
+rickety catwalks between them.  From the ceiling beams hung
+ropes and pulleys.</p>
+
+<p>“How goes your work today, friend?” asked Djishin.
+“That is a grander house than I’d imagined.”</p>
+
+<p>Said the man, “Last night I realized: my son may someday
+wish a wife and family.  So I am putting all in readiness for
+an estate of any size, depending on the number of children
+he foresees.  See, here are the ramps to carry flagstones
+for the floor, and scaffolding he can climb to set the roof
+tiles.”</p>
+
+<p>Djishin wished the man good health and continued on his way.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>The next day Djishin was at his terminal when master <a href='/names/Banzen'>Banzen</a> came in.</p>
+
+<p>“How goes your work today, monk?” asked Banzen.
+“I expect you need more time to implement this grand email
+framework you devised last week.”</p>
+
+<p>“No more time,” said Djishin, swivelling his monitor to face
+the master.  “I have dismantled the bones of my estate, and
+built for you this fine tool-shed.”
+</p>
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/reuse'>reuse</a>, <a href='/topics/abstraction'>abstraction</a>, <a href='/topics/APIs'>APIs</a>, <a href='/topics/bloat'>bloat</a>, <a href='/topics/YAGNI'>YAGNI</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

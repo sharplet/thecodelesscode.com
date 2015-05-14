@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 110 The Trunk  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/109"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/111"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/109'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/111'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/109' title='Previous'><</a>                <a href='/case/111' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/110?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/110?lang=fr&trans=abelards'><span class='trans-about'>French / Français<br />Traduit par Sylvain Abélard</span><span class='trans-lang'>FR</span></a>
+<a href='/case/110?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/110?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>moderately geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="moderately geeky"><img src="/images/geek2.png" alt="moderately geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 110</a></h2><h1 class="title"><a class='subtle' href='/contents'>The Trunk</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><p>A certain monk was summoned to the presence of master <a href='/names/Bawan'>Bawan</a>:</p>
+
+<p>“This trunk holds something which must be brought to the
+<a href='/names/Spider+Clan'>Spider Clan</a>,” said Bawan, pointing to a great wooden box
+bound with iron straps.  “Carry it to the abbot unaided and
+he will reward you for your pains.  A letter of explanation is
+tucked under the latch.”</p>
+
+<p>With great difficulty the monk hoisted the trunk upon
+his back and set out across the temple grounds to the
+domicile of the temple’s web developers.  There he
+was received by the abbot, who perused the letter
+while the exhausted monk waited for his reward.</p>
+
+<img src="/pages/case-110/Trunk.jpg" alt="" title="" class="illus-right"/>
+
+
+<p>“This trunk is none of my concern,” said the abbot, stuffing
+the letter back in place.  “It must be brought to the abbess
+of <a href='/names/Laughing+Monkey+Clan'>Laughing Monkey Clan</a>.  Carry it there unaided and
+your compensation will be most enviable.”</p>
+
+<p>The monk did as he was asked, panting with every step as
+he crossed the temple grounds to the domicile of the
+business logicians.  The abbess resided on the topmost floor.</p>
+
+<p>“This trunk is nothing to do with me,” said the abbess, who
+refused to let the monk set his burden down.  “It must be
+brought to <a href='/names/Elephant%27s+Footprint+Clan'>Elephant's Footprint Clan</a> at once.”</p>
+
+<p>“I think I see where this is going,” grimaced the monk.  “Perhaps
+one of your own monks can carry it?”</p>
+
+<p>“No time, no time!” said the abbess, tucking the letter back
+under the latch as she shooed the monk out the door.  “Carry it
+there unaided and great riches will await you!”</p>
+
+<p>An hour later the monk staggered into the domicile of the temple’s
+persistence-tier coders, collapsing in the main hallway with the
+trunk still on his back.  The white-haired abbot was summoned.</p>
+
+<p>“Wonderful!” said the old abbot after reading the letter.
+The semi-conscious monk heard him open the lid and close it
+again.  “Monk, wake up!  As reward for your service you may
+keep everything else in the trunk.  Now be off!”</p>
+
+<p>The monk crawled slowly out the door, like a turtle laboring
+under a great wooden shell.  It was nighttime when he
+reached his own quarters and tipped the trunk off his back.
+The top fell open and a hundred iron boxes spilled out.</p>
+
+<p>He opened them one by one. All were empty.</p>
+
+<p>Nothing else remained in the trunk but Bawan’s
+letter, which the old abbot had tossed back inside.  The
+monk unfolded it and read:</p>
+
+<blockquote>       To the abbots of the Three Clans&mdash;</blockquote>
+
+<blockquote>       In examining the performance problems of our shopping
+       cart system, I discovered that hundreds of actions
+       in the webtier are loading the very large and
+       complex CatalogInfo object tree from the database.</blockquote>
+
+<blockquote>       In examining the webtier, I discovered that these
+       actions are simply passing the unexamined CatalogInfo
+       into the sixteen service-tier methods which
+       happen to demand it.</blockquote>
+
+<blockquote>       In examining the service tier, I discovered that
+       these methods are simply passing the unexamined
+       CatalogInfo into four persistence-tier methods
+       which happen to demand it.</blockquote>
+
+<blockquote>       In examining the persistence tier, I discovered that
+       these methods are simply passing the unexamined
+       CatalogInfo into the one utility-tier method
+       which happens to demand it.</blockquote>
+
+<blockquote>       In examining that single method, I discovered that
+       it does nothing but check the CatalogInfo’s
+       integer-valued Type property to ensure that it is
+       not negative.   I also discovered that this method
+       was authored by the young man bearing my trunk.</blockquote>
+
+<blockquote>       Please ensure that he receives my explanation
+       in a suitable manner.
+</blockquote>
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/complexity'>complexity</a>, <a href='/topics/efficiency'>efficiency</a>, <a href='/topics/data+transfer+objects'>data transfer objects</a>, <a href='/topics/YAGNI'>YAGNI</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

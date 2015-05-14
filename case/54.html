@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 54 Knots  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/52"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/56"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/52'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/56'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/52' title='Previous'><</a>                <a href='/case/56' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a href='/case/54?lang=de&trans=andrebogus'><span class='trans-about'>German / Deutsch<br />Übersetzt von Andre Bogus</span><span class='trans-lang'>DE</span></a>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/54?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/54?lang=fr&trans=cdlm'><span class='trans-about'>French / Français<br />Traduit par Damien Pollet</span><span class='trans-lang'>FR</span></a>
+<a href='/case/54?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/54?lang=ru&trans=abur'><span class='trans-about'>Russian / русский<br />Перевод Alexei Burmistrov (Алексей Бурмистров)</span><span class='trans-lang'>RU</span></a>
+<a href='/case/54?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>slightly geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="slightly geeky"><img src="/images/geek1.png" alt="slightly geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 54</a></h2><h1 class="title"><a class='subtle' href='/contents'>Knots</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><img src="/pages/case-54/knots.jpg" alt="" title="A quintuple-reverse backhanded floral shank knot with a twenty-degree overhand kink and a stabilizer cord.  This is the only knot I ever learned.  I didn&#39;t tie my shoes until I was thirty-five." class="illus-right" style="padding-right: 10%"/>
+
+
+<p>Two nuns were walking along a wooded trail not far from the
+temple, when they discovered to their mutual inconvenience
+that the path ended in a sudden drop down a steep-sided
+ravine.  The bottom of the ravine lay over two hundred feet
+below them; the cliff on the opposite side was nearly the
+same distance away.</p>
+
+<p>“I pray your patience, Hwídah,” said the first nun, “For my mind has been
+overtaxed from memorizing too many APIs.  But was there not
+a rope bridge across the chasm at this point?”</p>
+
+<p>“I believe you are not mistaken, Yíwen,” said the second nun.
+“As I recall it was a sturdy bridge, old and servicable, and
+indeed I had hoped that we would make use of it on our walk.”</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>The wind whistled.</p>
+
+<p>“Again, take pity on me, Hwídah, for my eyes are
+weak from coding in the small hours.  But does that
+not appear to be the remains of the rope bridge on the far
+side of the chasm, dangling down the cliffside?”</p>
+
+<img src="/pages/case-54/Cliff.jpg" alt="" title="I&#39;m detecting a lack of urgency here." class="illus-right" style="padding-right: 10%"/>
+
+
+<p>“I believe it is, Yíwen, and if you look to the two great
+trees on either side of our path you will see that a portion
+of the bridge dangles uselessly down our side of the chasm as
+well.  Notice how both halves, near and far, twist in the wind
+with a few meager footplanks still trapped here and there in
+the braids, banging fitfully against the rock face.  The
+sound calls to mind a wind chime that once hung outside my
+window...”</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>Both nuns paused to consider the knocking and scraping of
+the planks against the cliffside.</p>
+
+<p>“A hundred pardons, Hwídah, for my ears are used to little but
+the clattering of my keyboard.  But can you not also discern
+a voice upon the wind?”</p>
+
+<p>“I believe I can, Yíwen.  If you observe the ropes on the
+far side you will realize that <a href='/names/Zjing'>Zjing</a>, a much-celebrated
+nun of our own order, is clinging to the end and shouting in
+our direction.  My impression is that she would be waving to
+attract our attention if her hands were not engaged in
+arresting her fall.  Let us not forget our manners.”</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>Hwídah waved to the imperiled nun.  Yíwen did likewise.</p>
+
+<p>“I hope you will not think me unkind, Hwídah, but have you
+not found Zjing to be overmuch concerned with the aesthetics
+of code?  Members of our clan complain that she frequently
+refactors their modules merely because she believes the
+implementation to be insufficiently elegant.”</p>
+
+<p>“I believe you are fair in your judgment, Yíwen.  While her
+goals are laudable, they are ever at odds with the
+complexities of our problem domain.  Indeed, her efforts
+have occasionally done more harm than good.  Still, that
+should not affect our decision to come to her aid.”</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>Both nuns lingered at the cliff edge and reflected
+on how best to help their comrade.</p>
+
+<p>“Is it not bad fortune, Hwídah, that the breaking of the
+bridge has left us with no means to cross the chasm
+and effect a rescue?”</p>
+
+<p>“I believe it is most terrible, Yíwen, but if the bridge had
+truly <i>broken</i> then the ropes would be frayed, yet I can
+see the finished ends quite clearly.  As I recall there was
+a lovely painted gate of red and gold at the exact midpoint
+of this bridge, and each half was secured to the gate by
+knots which have somehow come undone.”</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>Hwídah pointed to the river far below, where the
+remains of the gate could be seen floating in an eddy.
+Yíwen nodded.</p>
+
+<p>“Is it not your recollection, Hwídah, that the knots which
+secured the ropes to that gate were lamentably large and
+ugly, and detracted from its beauty?”</p>
+
+<p>“I believe they were, Yíwen.  I expect that their ugliness
+would have been most tantalizing to one who cared about such
+things&mdash;though it seems unlikely that anyone would be
+foolhardy enough to attempt re-tying the knots while
+standing at the bridge’s center.  Speaking for myself, I
+never found the ugliness that troubling.  I was grateful
+merely to be able to cross the bridge.  Month in and month 
+out, it fulfilled its purpose most excellently.”
+</p>
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/refactoring'>refactoring</a>, <a href='/topics/perfection'>perfection</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+<div class='credits'><p><span class='star'>*</span>Some textures in illustrations courtesy of <a href="http://fantasystock.deviantart.com">FantasyStock</a>.</p></div>
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

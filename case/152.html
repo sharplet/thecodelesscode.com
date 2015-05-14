@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 152 What Lies Beneath  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/151"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/153"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/151'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/153'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/151' title='Previous'><</a>                <a href='/case/153' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/152?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/152?lang=fr&trans=abelards'><span class='trans-about'>French / Français<br />Traduit par Sylvain Abélard</span><span class='trans-lang'>FR</span></a>
+<a href='/case/152?lang=it&trans=alessandro1997'><span class='trans-about'>Italian / Italiano<br />Tradotto da Alessandro Desantis</span><span class='trans-lang'>IT</span></a>
+<a href='/case/152?lang=ru&trans=smal'><span class='trans-about'>Russian / русский<br />Перевод Sergey Malenkov</span><span class='trans-lang'>RU</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>extremely geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="extremely geeky"><img src="/images/geek3.png" alt="extremely geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 152</a></h2><h1 class="title"><a class='subtle' href='/contents'>What Lies Beneath</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><img src="/pages/case-152/eavesdropping.jpg" alt="" title="" class="illus-right"/>
+
+
+<p>Though previously inseparable, the roommates <a href='/names/Y%C3%ADwen'>Yíwen</a> and
+<a href='/names/Hw%C3%ADdah'>Hwídah</a> now only crossed paths occasionally, for Yíwen’s
+spare hours were occupied with the making of a
+<a href='/case/151'>peculiar scarf</a>.  So the restless Hwídah had taken
+to exploring those few parts of the Temple grounds still unknown
+to her.</p>
+
+<p>Her wanderings led her to the halls of the abbey where
+dwelled the <a href='/names/Clan+of+the+Wolf%27s+Bitter+Breath'>Clan of the Wolf's Bitter Breath</a>, the
+black-robed monks who performed all Temple’s integration
+testing.  Developers were forbidden to trespass in this
+place, though Hwídah had never been told why, and like all
+mysteries this one gnawed at her.  She lurked in the shadows
+outside doorways and below cubicle partitions, hoping to
+learn some shocking Temple secret, but all she ever
+overheard from the black-robed monks within were loud jests
+at the expense of those developers whose code was defective.
+Most of these developers were of the <a href='/names/Spider+Clan'>Spider Clan</a>,
+Hwídah’s own.</p>
+
+<p>“It is most infuriating,” she heard one Bitter Breath monk
+complaining.  “I have selected an Order Status of ‘Unknown’,
+submitted the form, and all appears well.  Yet when I return
+to the form there is a validation error complaining of
+an illegal Order Status.  And the developer swears that he
+has made no changes to this page!”</p>
+
+<p>“Thus is it always with the Spiders,” sighed another voice.
+“If anything comes too near, they wrap it in eight
+layers of Javascript, cripple its responsiveness,
+suck out its usefulness, and declare that the
+twitching corpse is a job well done.”</p>
+
+<p>Their laughter followed Hwídah as she crept towards the
+abbey door.  <i>This, I shall surely investigate,</i> she thought, her
+fists clenched.</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>Later that day Hwídah approached Java master <a href='/names/Banzen'>Banzen</a>,
+with the fire of righteous indignation in her eyes and a
+printout in her hands.</p>
+
+<p>“This defect was created by a monk of the
+<a href='/names/Elephant%27s+Footprint+Clan'>Elephant's Footprint Clan</a>, not ours.  He rewrote the
+method which turns each database row into an object, and his
+new code contains this...”  Here she stabbed her finger at a
+line which read:</p>
+
+<pre>
+    order.setStatusCode(rs.getInt(STATUS_CODE));
+</pre>
+
+<p>“Ah,” said Banzen.  “I have seen such errors many times
+before.  The <i>statusCode</i> property is Integer-valued to allow
+it to hold a null.  But in the JDBC API, <i>getInt</i> returns the
+primitive <i>int</i> type and silently coerces a database NULL to a
+zero.  This zero is silently autoboxed by
+<i>setStatusCode</i> and returned by <i>getStatusCode</i>
+when the form is populated.
+And since there is no Order Status of zero,
+a valid database row will appear to be invalid.”</p>
+
+<p>“What correction for the monk of Elephant’s Footprint?”
+asked Hwídah.</p>
+
+<p>“Nothing lethal,” said Banzen.  “My usual punishment
+involves a boat which I keep in the south gorge for just
+such an occasion.  The monk will emerge bruised and damp,
+and in the future he will examine his oars and his
+APIs a little more critically before using them.”</p>
+
+<p>Hwídah’s face turned scarlet.  “But what of the honor of
+Spider Clan?  The monks of the Wolf’s Bitter Breath
+mock us openly in their abbey because of this!”  Then she froze,
+realizing that she had revealed her trespass
+onto forbidden ground, but Banzen only sighed.</p>
+
+<p>“The true fault lies with the authors of the venerable JDBC
+API, and with every maintainer since,” said the master.
+“They gave the monk a well-used rowboat, with sturdy oars
+already mounted in the oarlocks.  Shall we doom him merely
+for not noticing that the left oar was too short?  No... the
+dunking he receives when the boat spins in the rapids will
+suffice.”</p>
+
+<p>Hwídah bit her lip, bowed respectfully, and turned to leave.</p>
+
+<p>“Little nun,” said Banzen, raising his index finger to stop
+her.  “The defect is not mine, and I cannot prevent the
+errors it engenders.  Thus I use both defect and error to serve
+a greater purpose.”</p>
+
+<img class="break" src="/images/hrule.png" alt="- - -" />
+
+<p>At the evening meal Yíwen was not to be found, but
+Hwídah spied Banzen’s two young apprentices,
+<a href='/names/Djishin'>Djishin</a> and <a href='/names/Satou'>Satou</a>, sitting together.  The pair
+agreed to hear her complaints against their master.</p>
+
+<p>“Banzen seems determined to suffer this same error being
+made until the end of time!” concluded Hwídah in
+exasperation.  “We should give the Elephant’s Footprint
+a better boat!”</p>
+
+<p>“Indeed!” said Satou. “When I learned of this error, I
+begged the master to switch to a popular ORM framework.  Yet
+refactoring has its costs, and every tool has its perils,
+so the low-level code remains.”</p>
+
+<p>“Then we should provide a left oar of our own!” said Hwídah.</p>
+
+<p>“Indeed!” said Djishin. “When I learned of this error, I
+authored a suitable <i>getInteger</i> utility method.  Yet
+developers will only seek out what they think they need, and
+what they know to look for, so the utility goes unused.”</p>
+
+<p>Hwídah sank in despair.  “So the monk of Elephant’s
+Footprint is barely corrected, and the monk of the Wolf’s
+Bitter Breath is not corrected at all.  At least miserable
+Hwídah has been corrected, for now I understand why it is
+forbidden to enter the Wolf’s Den, and that is to maintain
+harmony between our clans.  An insult can only become a
+grievance if it is overheard.”</p>
+
+<p>Djishin said, “You perceive the shafts of the oars
+above the water, but your true course has been determined
+by what lies beneath.”</p>
+
+<p>Satou continued, “Our master knows you violated the edict:
+this much he has told us freely.  But the edict is not his,
+and he cannot prevent it from being violated by the irrepressibly
+curious.  Thus he uses both the edict and its violations for
+a greater purpose.”</p>
+
+<p>Satou put a companionable arm around Hwídah.  “Enjoy
+your meal, sister of the Spider Clan!  For I fear that
+Hwídah’s correction is just beginning...”
+</p>
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/Java'>Java</a>, <a href='/topics/JDBC'>JDBC</a>, <a href='/topics/databases'>databases</a>, <a href='/topics/autoboxing'>autoboxing</a>, <a href='/topics/APIs'>APIs</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+

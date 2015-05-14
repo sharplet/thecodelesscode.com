@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <meta name="description" content="An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development"></meta>
+  <meta name="keywords" content="software, koans, software koans, computer, wisdom, zen, buddhism, the gateless gate, java"></meta>
+
+<!-- Enable reponsive web design -->
+<meta content="True" name="HandheldFriendly">
+
+
+
+
+  <title>
+    The Codeless Code:
+    Case 173 Lost Peer  </title>
+  <link rel="shortcut icon" href="/images/tcc-favicon.ico" ></link>
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-css-link"
+	    href="/css/tcc.css" ></link>
+
+
+
+  <link rel="stylesheet" type="text/css"
+	    id="tcc-contents-css-link"
+	    href="/css/tcc-contents.css" ></link>
+  <link rel="alternate" type="application/rss+xml"
+        title="The Codeless Code (RSS)"
+        href="http://thecodelesscode.com/rss" ></link>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Quintessential' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/stickySidebar.js"></script>
+  <script type="text/javascript" src="/js/dk.js?1"></script>
+
+  <!-- Google Analytics, for website stats -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22171819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+   <table id="bodytable" class="layout">
+
+    
+
+
+      <tr id="toprow">
+        <td colspan="2" id="topcircuits"><div id="tcc-case-title-box"><a href="/contents"><img id='tcc-case-title' src='/images/tcc-case-title-link.png' alt='tcc-case-title' width='364' height='58' onmouseover="DkNavMouseOver('tcc-case-title')" onmouseout="DkNavMouseOut('tcc-case-title')"/></a></div></td>
+        </td>
+      </tr>
+      <tr id="bodyrow" >
+        <td id="sidebar"
+          ><img id="homecap" src="/images/homecap.png" alt=""
+               width="155" height="93"
+         /><table class="layout">
+            <tr>
+              <td colspan="2"
+                ><a href="/contents"><img id='home' src='/images/home-link.png' alt='home' width='155' height='73' onmouseover="DkNavMouseOver('home')" onmouseout="DkNavMouseOut('home')"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="/case/172"><img id='prev' src='/images/prev-link.png' alt='prev' width='83' height='62' onmouseover="DkNavMouseOver('prev')" onmouseout="DkNavMouseOut('prev')"/></a></td>
+              <td><a href="/case/174"><img id='next' src='/images/next-link.png' alt='next' width='72' height='62' onmouseover="DkNavMouseOver('next')" onmouseout="DkNavMouseOut('next')"/></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"
+                ><a href="/case/random"><img id='random' src='/images/random-link.png' alt='random' width='155' height='73' onmouseover="DkNavMouseOver('random')" onmouseout="DkNavMouseOut('random')"/></a></td>
+            </tr>
+
+
+            <tr><td colspan="2"><img src="/images/leftcap.png" alt=""
+                width=155 height=31/></td></tr>
+            <tr><td colspan="2"><img src="/images/left.png" alt=""
+                width=155 height=466/></td></tr>
+            <tr><td colspan="2"><img src="/images/leftfoot.png" alt=""
+                width=155 height=41/></td></tr>
+
+
+            </table>
+        </td>
+
+        <td id="content" >
+        <div id="topmenu">
+
+          <div id="textmenu">
+           <a href='/contents'>Contents</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/topics'>Topics</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/names'>Names</a><span class="barlong">&#x00A0;</span><a href='/case/first'>First</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/172'>Previous</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/174'>Next</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/last'>Last</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/case/random'>Random</a><span class="barlong">&#x00A0;</span><a href='/about'>About</a>&nbsp;<span class="bar">&#x00b7;</span>&nbsp;<a href='/rss'><span class='tiny-rssr'></span></a><span class="barlong">&#x00A0;</span>        </div>
+        <div id="tinymenu">
+
+           <span class="menu-group">
+                <a href='/contents' title='Contents'>^</a>           </span>
+
+           <span class="menu-group">
+                <a href='/case/first' title='First'>|<</a>                <a href='/case/172' title='Previous'><</a>                <a href='/case/174' title='Next'>></a>                <a href='/case/last' title='Last'>>|</a>                <a href='/case/random' title='Random'>&#x2683;</a>           </span>
+
+           <span class="menu-group">
+                <a href='/about' title='About'><i>i</i></a>                <a href='/rss'><span class='tiny-rssr'></span></a>           </span>
+
+        </div>
+
+
+        <div id="langmenu"><span class='trans-menu-button' id='caseLangMenu-button' style='position:relative'>
+<span id='caseLangMenu' class='trans popup'>
+<a href='/case/173?lang=de&trans=andrebogus'><span class='trans-about'>German / Deutsch<br />Übersetzt von Andre Bogus</span><span class='trans-lang'>DE</span></a>
+<a class='nolink'><span class='trans-about'>English<br />Original text by Qi</span><span class='trans-lang'>EN</span></a>
+<a href='/case/173?lang=es&trans=galcalde'><span class='trans-about'>Spanish / Español<br />Traducido por Gonzalo Alcalde</span><span class='trans-lang'>ES</span></a>
+<a href='/case/173?lang=fr&trans=abelards'><span class='trans-about'>French / Français<br />Traduit par Sylvain Abélard</span><span class='trans-lang'>FR</span></a>
+</span>
+<span class='tiny-trans' title='Translations' /></span>
+</div>
+    </div>
+
+
+
+<div id="titles" ><div class='case-geekiness'>extremely geeky&nbsp;&nbsp;<span style="cursor:help" onclick="DkPopUpGeekinessHelp()" title="extremely geeky"><img src="/images/geek3.png" alt="extremely geeky" width="28" height="11" border="0" /></span></div><h2 class="supertitle"><a class='subtle' href='/contents'>Case 173</a></h2><h1 class="title"><a class='subtle' href='/contents'>Lost Peer</a></h1></div><div id="contenttext" class="contenttext" >
+
+
+<div class='story koan'><p><i>From “The Courtship of Eku and Mugen”:</i> <a class="footnoteref" id="noteref-1" href="#note-1"><sup class="footnote">1</sup></a></p>
+
+<p>There was a time, as ancient logs recall, <br />
+when you and I would Handshake every morn <br />
+through packets on an Ether-network borne <br />
+our love conveyed by formal Protocol.</p>
+
+<p>So high was your availability, <br />
+a timeout span in minutes would I set&mdash;<br />
+secure that neither POST nor PUT nor GET <br />
+would e’er a 504 return to me.</p>
+
+<p>And when your subnet’s firewall arose, <br />
+you bade its router map a secret port <br />
+through which we could clandestinely consort&mdash;<br />
+a backdoor assignation, undisclosed.</p>
+
+<p>Discreetly you’d a server-socket bind <br />
+to listen at your gate for my connect <br />
+But if this host address be still correct, <br />
+Then why resounding silence do I find?</p>
+
+<p>My every last connection is refused, <br />
+my buffered input streams have all run dry, <br />
+the root nodes of our JSON trees I spy <br />
+now withered on the heap; they die unused.</p>
+
+<p>Oh! Where can you have gone, beloved peer? <br />
+A segmentation fault?  A kill-dash-9? <br />
+No, say you live!  And if the fault be mine, <br />
+I’ll every line rewrite ‘til you appear.</p>
+
+<p>‘Til then <i>i</i> iterate from one to <i>n</i> <br />
+Yet never take exception when I fail <br />
+but catch myself, and log, and weep, and wail, <br />
+then sleep an interval, and try again.</p>
+
+<p>Thus furtively alone at night I’ll SYN <br />
+and dream that you will send some answer back&mdash;<br />
+Oh, SYN with me!  And promise we shall ACK <br />
+until we both lie sated, kiss... and FIN.</p>
+
+<p>I’ll seek thee there with netcat minus-z! <br />
+I’ll seek thee here with netstat minus-t! <br />
+Let others mock my hopeless loyalty&mdash;<br />
+They only serve who serve HTTP.</p>
+
+<h2>Qi’s Commentary</h2>
+
+<p>Mugen liked to code in poetry.  Presumably, the seventh stanza
+is meant to convey an algorithm like this:</p>
+
+<pre>
+    SocketAddress sockAddr = new InetSocketAddress(host, port);
+    for (int i = 1; i <= N_TRIES; i++) {
+        try {
+            client.connect(sockAddr, TIMEOUT_MILLIS);
+            return client;
+        }
+        catch (Exception e) {
+            log.warning("weep, wail");
+            Thread.sleep(INTERVAL_MILLIS);
+        }
+    }
+    throw new IOException("give up");
+</pre>
+
+<p>It is theorized that his ten-thousand-stanza epic, <i>The Dromedary</i>,
+describes a Perl-to-OCaml converter written in C++.
+No scholar can stay sane long enough to be certain.</p>
+
+<div class='footnotes'>
+<div class='footnote' id='note-1'><a href='#noteref-1'><sup class='footnote'>1</sup></a>&nbsp;Dedicated to Stanislaw Lem, with profuse apologies<a class="footnoteref" id="noteref-2" href="#note-2"><sup class="footnote">2</sup></a> to my translators.</div>
+<div class='footnote' id='note-2'><a href='#noteref-2'><sup class='footnote'>2</sup></a>&nbsp;Guys, please don’t kill me for this.  Really, you can skip this one.</div>
+</div>
+
+
+</div><div class='footerTags'><span class='footerTagsPrompt'>Topics</span>... &nbsp;<span class='footerTagList'><a href='/topics/poetry'>poetry</a>, <a href='/topics/TCP'>TCP</a>, <a href='/topics/IP'>IP</a>, <a href='/topics/HTTP'>HTTP</a>, <a href='/topics/network'>network</a>, <a href='/topics/sockets'>sockets</a>, <a href='/topics/protocols'>protocols</a>, <a href='/topics/clients'>clients</a>, <a href='/topics/servers'>servers</a></span></div>
+          <div id="copyright">
+
+<p>
+An excerpt from <i><a href='/contents'>The Codeless Code</a></i>, by Qi (<a href='mailto:qi@thecodelesscode.com'>qi@thecodelesscode.com</a>).</p>
+
+<p>
+     Provided under the      <a href="http://creativecommons.org/licenses/by-nc/3.0/"
+      >Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
+</p>
+
+
+
+            </div>
+
+          </div>  <!-- #contenttext -->
+        </td>  <!-- #content -->
+      </tr>  <!-- #bodyrow -->
+    </table>  <!-- #bodytable -->
+  <div id="img_preload" style="display:none"><div style='display:none'><img src='/images/home.png'/><img src='/images/home-hover.png'/><img src='/images/home-link.png'/></div><div style='display:none'><img src='/images/prev.png'/><img src='/images/prev-hover.png'/><img src='/images/prev-link.png'/></div><div style='display:none'><img src='/images/next.png'/><img src='/images/next-hover.png'/><img src='/images/next-link.png'/></div><div style='display:none'><img src='/images/random.png'/><img src='/images/random-hover.png'/><img src='/images/random-link.png'/></div><div style='display:none'><img src='/images/tcc-case-title.png'/><img src='/images/tcc-case-title-hover.png'/><img src='/images/tcc-case-title-link.png'/></div><div style='display:none'><img src='/images/casemenuitem.png'/></div><div style='display:none'><img src='/images/casemenuitem-hover.png'/></div><div style='display:none'><img src='/images/casemenuitem-here.png'/></div><div style='display:none'><img src='/images/casemenuitem-help.png'/></div></div>
+  </body>
+</html>
+
+
